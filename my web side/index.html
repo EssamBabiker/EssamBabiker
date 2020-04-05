@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>#home_page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+</head>
+<style>body {font-family: "Roboto", sans-serif}</style>
+
+<body>
+<!-- الشريط العلوي -->  
+  <div id="navbar">
+        <a href="#default" id="logo">Home Page Logo</a>
+        <div id="navbar-right">
+          <a href="#About me"> About me </a>
+          <a href="#Link 1">    Link 1  </a>
+          <a href="#Link 2">    Link 2  </a>
+          <a href="#Link 3">    Link 3  </a>
+          <a class="active" href="#home">Home</a>
+        </div>
+      </div>
+<script>
+    // سكريببت الشريط العلوي
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+          if (document.body.scrollTop > 75 || document.documentElement.scrollTop > 75) {
+            document.getElementById("navbar").style.padding = "15px 7px";
+            document.getElementById("logo").style.fontSize = "22px";
+          } else {
+            document.getElementById("navbar").style.padding = "55px 7px";
+            document.getElementById("logo").style.fontSize = "30px";
+          }
+        }
+</script>
+
+<!-- تقسيم الصفحة #000422 --> 
+<div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, April 5, 2020</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+
+          <div class="main">
+
+                <h1>SOME PHOTOS</h1>
+                <hr>
+                <h2>PORTFOLIO</h2>
+                
+                <div id="myBtnContainer">
+                  <button class="btn All" onclick="filterSelection('all')"> Show all</button>
+                  <button class="btn nature" onclick="filterSelection('nature')"> Nature</button>
+                  <button class="btn cars" onclick="filterSelection('cars')"> Cars</button>
+                  <button class="btn people" onclick="filterSelection('people')"> People</button>
+                </div>
+                
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                  <div class="column nature">
+                    <div class="content">
+                      <img src="img/mountains.jpg" alt="Mountains" style="width:100%">
+                      <h4>Mountains</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="img/lights.jpg" alt="Lights" style="width:100%">
+                      <h4>Lights</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                  <div class="column nature">
+                    <div class="content">
+                    <img src="img/nature.jpg" alt="Nature" style="width:100%">
+                      <h4>Forest</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                  
+                  <div class="column cars">
+                    <div class="content">
+                      <img src="img/cars1.jpg" alt="Car" style="width:100%">
+                      <h4>Retro</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                  <div class="column cars">
+                    <div class="content">
+                    <img src="img/cars2.jpg" alt="Car" style="width:100%">
+                      <h4>Fast</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                  <div class="column cars">
+                    <div class="content">
+                    <img src="img/cars3.jpg" alt="Car" style="width:100%">
+                      <h4>Classic</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                
+                  <div class="column people">
+                    <div class="content">
+                      <img src="img/people1.jpg" alt="Car" style="width:100%">
+                      <h4>Girl</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                  <div class="column people">
+                    <div class="content">
+                    <img src="img/people2.jpg" alt="Car" style="width:100%">
+                      <h4>Man</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                  <div class="column people">
+                    <div class="content">
+                    <img src="img/people3.jpg" alt="Car" style="width:100%">
+                      <h4>Woman</h4>
+                      <p>Lorem ipsum dolor..</p>
+                    </div>
+                  </div>
+                <!-- END GRID -->
+                </div>
+                
+                <!-- END MAIN -->
+                </div>
+
+
+
+          <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, April 5, 2020</h5>
+            <div class="fakeimg" style="height:200px;"> you can set Image here</div>
+            <p>Some text..<br>and Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg"><img src="scr\1.jpg" style="width:100% ;"></div>
+            <p><br>
+                Essam-Adeen Babiker<br>
+                Age 22<br>
+                Univercity Of Gazira UOFG<br>
+                FMCS - B 39 <br>
+                Since Of Computer
+                <br>
+            </p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg"><img src="scr\2.jpg" style="width:100% ;"></div><br>
+            <div class="fakeimg"><img src="scr\v.jpg" style="width:100% ;"></div><br>
+            <div class="fakeimg"><img src="scr\n.jpg" style="width:100% ;"></div>
+          </div>
+
+          <div class="card">
+            <h3>Follow Me</h3>
+          </div>
+        </div>
+      </div>
+<!-- MAIN (Center website) -->
+<!-- MAIN (Center website) -->
+      <!-- MAIN (Center website) -->
+        <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+          
+  <div class="footer">
+        <p>Powered by <a href="default.html" title="3sam.go" target="_blank" class="3sam">3sam.go</a></p>
+      </div>  
+</body>
+</html>

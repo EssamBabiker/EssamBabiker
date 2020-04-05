@@ -1,0 +1,155 @@
+* {box-sizing: border-box;}
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  background: #bebebe
+}
+#navbar {
+  overflow: hidden;
+  background-color: #000422;
+  padding: 55px 7px;
+  transition: 0.4s;
+  position: fixed;
+  width: 99%;
+  top: 0;
+  z-index: 90;
+}
+#navbar a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding : 15px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+#navbar #logo {
+  font-size: 38px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+#navbar a:hover {
+    background-color: white;
+    color: #000422;
+    transition: 0.4s;
+}
+#navbar a.active {
+  background-color: white;
+  color: #088364;
+}
+#navbar-right {
+  float: right;
+}
+.leftcolumn
+  {   
+    float: left;
+    margin-top: 10%;
+    width: 75%; 
+  }
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    margin-top: 10%;
+    padding-left: 20px;
+  }
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    margin-top: 10%;
+    padding: 10px;
+  }
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Footer */
+  .footer {
+    padding: 2px;
+    color:white;
+    width: 100.15%;
+    text-align: center;
+    background: #000422;
+  }
+
+
+  /* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  color:white;
+}
+h2{
+    color:white;
+}
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+.btn.All {background-color: #4CAF50;} 
+.btn.All:hover {background-color: #46a049;}
+
+.btn.nature{background-color: #2196F3;} 
+.btn.nature:hover {background: #0b7dda;}
+
+.btn.cars{background-color: #ff9800;}
+.btn.cars:hover {background: #e68a00;}
+
+.btn.people {background-color: #f44336;} 
+.btn.people:hover {background: #da190b;}
+
